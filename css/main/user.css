@@ -1,0 +1,124 @@
+body{
+  width:100%;
+  margin:0 auto;
+  background-color: #e1e1e1
+}
+
+header{
+  color:#fff;
+  height:70px;
+  width:100%;
+  background-color:#444;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:18px
+}
+header a{
+  text-decoration: none;
+  color:#fff
+}
+header .logo{
+  margin-left:5%
+}
+header span{
+  margin-right:35px
+}
+header img{
+  width:120px;
+  height:30px
+}
+section{
+  width:90%;
+  margin:20px auto
+}
+section .userbox{
+  line-height: 27px;
+  width:70%;
+  float: left;
+}
+section .userbox div{
+  background: #fff;
+  margin-top:20px;
+}
+section .userMsg{
+  float: right;
+  height:300px;
+  width:25%;
+  background: #fff;
+  margin-top: 20px
+}
+section .baseMsg li{
+  list-style: none;
+}
+section .baseMsg img{
+  width:40px;
+  height:40px;
+  border-radius: 3px;
+  margin:10px 0 0 20px;
+}
+
+section .baseMsg p{
+  margin:0 0 0 20px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: bold
+}
+section .baseMsg ul li a{
+  text-decoration: none;
+  color:black
+}
+section .baseMsg li:nth-of-type(1){
+  font-style:italic;
+  cursor: pointer
+}
+section .topicCre{
+  width:100%;
+}
+section .topicCre li{
+  list-style: none;
+  height:50px;
+  width:100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+section .topicCre li img{
+  width:30px;
+  height:30px;
+  border-radius: 3px;
+  margin:0 20px
+}
+section .topicCre ul{
+  padding:0
+}
+section .topicCre ul li .visitTime{
+  position: absolute;
+  right:10%
+}
+section .topicCre ul li a{
+  text-decoration: none;
+  color:black
+}
+footer{
+  width:100%;
+  height:190px;
+  background-color: #fff;
+  font-size: 14px;
+  color:#ababab;
+}
+footer span a{
+  text-decoration: none;
+  font-size: 16px
+}
+footer p{
+  line-height:60px;
+  height: auto
+}
+footer img{
+  width:150px;
+  height:30px;
+  background-image: 100%
+
+}
