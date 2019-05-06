@@ -2,5 +2,30 @@
     .rightBar,footer{
       display: none
     }
+    section{
+      margin:0;
+      width:100%
+    }
+    section .leftBar{
+      width:100%;
+      margin:0
+    }
+    .content li #visitTime{
+      display: none
+    }
+    .content li{
+      position: relative;
+      
+    }
+    .content li #reply, #tabtype{
+      position: absolute;
+      top:10px;
+      
+    }
+    .content li #title{
+      margin: 15px 45px;
+      font-size: 14px
+    }
+   
 
 }

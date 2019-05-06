@@ -81,10 +81,10 @@ $(function(){
           $('header .type').text(oData.tab)
           $('article').html(oData.content)
           $.each(reply,function(index,item){
-
+            var create_at=item.create_at.slice(0,10)
             str+=
               "<div class='reply'><img src='"+item.author.avatar_url+"'>"+
-              "<span class='repMsg'>"+item.author.loginname+"&nbsp&nbsp"+(index+1)+"楼"+"&nbsp&nbsp"+item.create_at+"</span>"+
+              "<span class='repMsg'>"+item.author.loginname+"&nbsp&nbsp"+(index+1)+"楼"+"&nbsp&nbsp"+create_at+"</span>"+
               "<br><span class='contentMsg'>"+item.content+"</span>"+
               "</div>"
 

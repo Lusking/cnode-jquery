@@ -18,8 +18,8 @@ header a{
   text-decoration: none;
   color:#fff
 }
-header .logo{
-  margin-left:5%
+header .back{
+  margin-left:-7px;
 }
 header span{
   margin-right:35px
@@ -30,7 +30,7 @@ header img{
 }
 section{
   width:90%;
-  margin:20px auto
+  margin:10px auto
 }
 section .userbox{
   line-height: 27px;
@@ -43,10 +43,21 @@ section .userbox div{
 }
 section .userMsg{
   float: right;
-  height:300px;
+  line-height:30px;
   width:25%;
+  margin-top:20px;
   background: #fff;
-  margin-top: 20px
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center
+}
+section .userMsg li{
+  list-style: none;
+}
+section .userMsg li a{
+  text-decoration: none;
+  color: black
 }
 section .baseMsg li{
   list-style: none;
@@ -75,6 +86,12 @@ section .baseMsg li:nth-of-type(1){
 section .topicCre{
   width:100%;
 }
+section .topicCre p,.userMsg p{
+  background-color: #f6f6f6;
+  padding:10px;
+  color:#80bd01
+}
+
 section .topicCre li{
   list-style: none;
   height:50px;
@@ -121,4 +138,26 @@ footer img{
   height:30px;
   background-image: 100%
 
+}
+@media (max-width:770px){
+  section{
+    margin:0;
+    padding:0;
+    width:100%;
+  }
+  section .userbox div{
+    margin:0
+  }
+  section .userbox{
+    width:100%
+  }
+  section .topicCre ul li .visitTime {
+    display: none
+  }
+  section .userMsg{
+    display: none
+  }
+  footer{
+    display: none
+  }
 }

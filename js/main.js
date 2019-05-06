@@ -78,15 +78,13 @@ $ (function(){
 
         })
     }
-
-
-
-
     function additem(data,el){
       var str="<ul>",
           arr=data.data,
           iTab='',
-          title='';
+          title='',
+          visit_count,
+          last_reply_at
       $.each(arr,function(n,item){
           if(item.good){
             iTab='精华'
@@ -97,23 +95,25 @@ $ (function(){
           }else {
             iTab=item.tab=="ask"?'问答':'分享';
           }
+          visit_count=item.visit_count>999?item.visit_count.toString().slice(0,1).concat('k+'):item.visit_count
           content=item.content
           localStorage.removeItem('id')
           localStorage['id']=item.id
           authorName=item.author.loginname
+          last_reply_at=item.last_reply_at.slice(0,10)
           title=item.title.length>25?item.title.toString().substr(0,25).concat('...'):item.title;
           if(!item.author.avatar_url)
             item.author.avatar_url='../img/1.jpg'
           str+=
               "<li>"
-              +"<a href='../html/user.html'><img id='authorImg' src='"+item.author.avatar_url+ "' alt=''></a>"
+              +"<a href='./html/user.html'><img id='authorImg' src='"+item.author.avatar_url+ "' alt=''></a>"
               // +"<p class='readCount'>"
-              +"<span id='reply'>"+item.reply_count+"/"+item.visit_count+"</span>"
+              +"<span id='reply'>"+item.reply_count+"/"+visit_count+"</span>"
               // +"</p>"
               +"<span id='tabtype'>"+iTab+"</span>"
-              +"<span id='title'>"+"<a  target='_self' href='../html/content.html'>"+title+"</a>"+"</span>"
+              +"<span id='title'>"+"<a  target='_self' href='./html/content.html'>"+title+"</a>"+"</span>"
               // +"<img id='visitImg' src='' alt='无法查询'>"
-              +"<span id='visitTime'>"+item.last_reply_at+"</span>"
+              +"<span id='visitTime'>"+last_reply_at+"</span>"
               +"</li>"
 
             })

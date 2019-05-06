@@ -7,7 +7,6 @@
   background-color: #ccc
 }
 header{
-  height:50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -17,38 +16,39 @@ header{
   position: relative;
 }
 header .cnode img{
-  margin-left:50px;
-  width:128px;
-  height: 23px;
-  height:100%;
+  margin-left:8vw;
+  width:10vw;
+  padding-top: 2vw;
+  height: 2vw;
 }
 header .cnode input{
-  width:200px;
+  width:20vw;
   height:25px;
   border:none;
   outline-style: none;
   border-radius:11.5px;
   background-color:#666;
-  margin-left:20px;
-  padding-left:11.5px
+  padding-left:20px;
+  margin:20px
 }
 header>ul{
   position: absolute;
-  right:5%
+  right:8vw
 }
 header>ul li{
+  display: inline-block;
   color:#ccc;
-  padding:15px 10px;
+  margin-left: 2vw
 }
 header>ul li:hover{
   color:#fff
 }
 section{
-  width:90%;
+  width:95%;
   margin:20px auto
 }
 section::after{
-  content:'';
+  content:"";
   clear: both;
   display: block;
   height: 0
@@ -62,7 +62,6 @@ section .navBlock{
   height: 40px;
   width: 100%;
   line-height: 40px;
-  padding-left:0;
   color:#80bd01;
   background-color: #f6f6f6
 }
@@ -72,9 +71,6 @@ section .navBlock li{
   height:20px;
   line-height: 20px;
   border-radius: 3px
-}
-section .navBlock li:first-child{
-    border-radius-top:5px
 }
 section .navBlock li:hover{
   color:blue
@@ -125,7 +121,8 @@ section .btn ul li{
   border-bottom:1px solid #ccc;
   color:black;
   height: 50px;
-  line-height: 50px
+  line-height: 50px;
+  overflow:hidden
 }
 .content ul>li:hover{
   background-color: #f6f6f6
@@ -134,14 +131,14 @@ section .btn ul li{
   width:30px;
   border-radius:3px;
   float:left;
-  margin:10px
+  margin:10px 5px
 }
 .content li #reply,#tabtype{
   display: inline-block;
-  font-size:14px;
+  font-size:10px;
   color:#333;
-  width:50px;
-  margin:0 15px
+  width:30px;
+  margin:0 1vw
 }
 .content li #tabtype{
   line-height: 18px;
@@ -154,6 +151,8 @@ section .btn ul li{
   font-size:16px;
   font-weight:bold;
   margin:15px 0;
+  max-width: 60%;
+  text-overflow: ellipsis
 
 }
 .content li #title:hover{
