@@ -106,12 +106,12 @@ $ (function(){
             item.author.avatar_url='../img/1.jpg'
           str+=
               "<li>"
-              +"<a href='./html/user.html'><img id='authorImg' src='"+item.author.avatar_url+ "' alt=''></a>"
+              +"<a href='./html/user.html?userName="+item.author.loginname+"'><img id='authorImg' src='"+item.author.avatar_url+ "' alt=''></a>"
               // +"<p class='readCount'>"
               +"<span id='reply'>"+item.reply_count+"/"+visit_count+"</span>"
               // +"</p>"
               +"<span id='tabtype'>"+iTab+"</span>"
-              +"<span id='title'>"+"<a  target='_self' href='./html/content.html'>"+title+"</a>"+"</span>"
+              +"<span id='title'>"+"<a  target='_self' href='./html/content.html?itemId="+item.id+"'>"+title+"</a>"+"</span>"
               // +"<img id='visitImg' src='' alt='无法查询'>"
               +"<span id='visitTime'>"+last_reply_at+"</span>"
               +"</li>"
